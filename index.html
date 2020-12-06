@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My SDU</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+	<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnMj8Xc5_jA0tqVHCoFHCk-2sHt4imItA&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+</head>
+<body onload="load()">
+	<script src="main.js"></script>
+
+	<div id = hat>
+		<div id = "sdulogo"><img src="sdulogo.png" onclick="window.location.reload()" width="75%" height="95%"></div>
+		<div id = "ones" class="attendance" onmouseover="font_bigger(this)" onmouseout="font_smaller(this)">E-Attendance</div>
+		<div id = "ones" class="schedule" onmouseover="font_bigger(this)" onmouseout="font_smaller(this)">Course Schedule</div>
+		<div id = "ones" onmouseover="font_bigger(this)" onmouseout="font_smaller(this)">Grades</div>
+		<div id = "ones" onmouseover="font_bigger(this)" onmouseout="font_smaller(this)">Course Registration</div>
+		<div id = "ones" onmouseover="font_bigger(this)" onmouseout="font_smaller(this)" onclick="window.location.reload()">Sign Out</div>
+	</div>
+	<img id = "sdu" src="sdu.jpg">
+	<div>
+		<img id = "stud_photo" src="stud_photo.jpg">
+		<table class="table table-hover" id = "table1">
+  			<tbody>
+   				<tr>
+      			<th scope="row">Student ID:</th>
+      			<td>190103247</td>
+    			</tr>
+    			<tr>
+      			<th scope="row">Name & Surname:</th>
+      			<td>Nurdaulet Daudov</td>
+    			</tr>
+    			<tr>
+      			<th scope="row">Birth Date:</th>
+      			<td colspan="2">12-March, 2002</td>
+    			</tr>
+    			<tr>
+      			<th scope="row">Program/Class:</th>
+      			<td colspan="2">Information Systems</td>
+    			</tr>
+    			<tr>
+      			<th scope="row">Advisor:</th>
+      			<td colspan="2">Kurmangazy Kongratbayev</td>
+    			</tr>
+    			<tr>
+      			<th scope="row">Status:</th>
+      			<td colspan="2">Studying</td>
+    			</tr>
+    			<tr>
+      			<th scope="row">ENT exam score:</th>
+      			<td>120</td>
+    			</tr>
+    			<tr>
+      			<th scope="row">Grant Type:</th>
+      			<td>State Grant</td>
+    			</tr>
+    			<tr>
+      			<th scope="row">Email:</th>
+      			<td>190103247@stu.sdu.edu.kz</td>
+    			</tr>
+    			<tr>
+      			<th scope="row">Registration date:</th>
+      			<td>25-July, 2019</td>
+    			</tr>
+  			</tbody>
+	</table>
+			<table class="table table-hover" id = "table2">
+			<thead>
+				<tr>
+					<th></th>
+					<th>Code</th>
+					<th>Course Name</th>
+					<th>ECTS</th>
+					<th>Hours</th>
+					<th><img src="https://my.sdu.edu.kz/images/check.png"></th>
+					<th><img src="https://my.sdu.edu.kz/images/cross.png"></th>
+					<th><img src="https://my.sdu.edu.kz/images/p.png"></th>
+					<th>Absence % (Limit: 50%)</th>
+				</tr>
+			</thead>
+  			<tbody>
+   				<tr>
+      			<th scope="row">1</th>
+      			<td>CSS 215</td>
+      			<td>Introduction to Algorithms</td>
+      			<td>5</td>
+      			<td>45</td>
+      			<td>4</td>
+      			<td>1</td>
+      			<td>1</td>
+      			<td>4%  <progress value="4" max="100"></td>
+    			</tr>
+    			<tr>
+      			<th scope="row">2</th>
+      			<td>INF 202</td>
+      			<td>Database Management Systems 1</td>
+      			<td>5</td>
+      			<td>45</td>
+      			<td>5</td>
+      			<td>0</td>
+      			<td>0</td>
+      			<td>0%  <progress value="0" max="100"></td>
+    			</tr>
+    			<tr>
+      			<th scope="row">3</th>
+      			<td>INF 231</td>
+      			<td>Web programming: front end</td>
+      			<td>5</td>
+      			<td>45</td>
+      			<td>5</td>
+      			<td>2</td>
+      			<td>0</td>
+      			<td>4%  <progress value="4" max="100"></td>
+    			</tr>
+    			<tr>
+      			<th scope="row">4</th>
+      			<td>MDE 123</td>
+      			<td>Russian Language 1 (B1 level)</td>
+      			<td>5</td>
+      			<td>45</td>
+      			<td></td>
+      			<td></td>
+      			<td></td>
+      			<td>0%  <progress value="0" max="100"></td>
+    			</tr>
+    			<tr>
+      			<th scope="row">5</th>
+      			<td>MDE 133</td>
+      			<td>Turkish Language 3 (А2 level)</td>
+      			<td>3</td>
+      			<td>30</td>
+      			<td>6</td>
+      			<td>4</td>
+      			<td>0</td>
+      			<td>13%  <progress value="13" max="100"></td>
+    			</tr>
+    			<tr>
+      			<th scope="row">6</th>
+      			<td>MDE 143</td>
+      			<td>Physical Education 3</td>
+      			<td>2</td>
+      			<td>15</td>
+      			<td></td>
+      			<td></td>
+      			<td></td>
+      			<td>0%  <progress value="0" max="100"></td>
+    			</tr>
+    			<tr>
+      			<th scope="row">7</th>
+      			<td>MDE 172</td>
+      			<td>Philosophy</td>
+      			<td>5</td>
+      			<td>45</td>
+      			<td>0</td>
+      			<td>18</td>
+      			<td>0</td>
+      			<td>45% <progress value="45" max="100"></td>
+    			</tr>
+  			</tbody>
+	</table>
+	</div>
+	<select name="years" id="years">
+		<option>2020 - 2021 (1)</option>
+		<option>2019 - 2020 (2)</option>
+		<option>2019 - 2020 (1)</option>
+	</select>
+	<table class="table table-bordered" id = "table3">
+  		<thead>
+   		<tr>
+     	<th scope="col">Day/Hour</th>
+      	<th scope="col">Monday</th>
+      	<th scope="col">Tuesday</th>
+      	<th scope="col">Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Saturday</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">09:00<br>09:50</th>
+      <td></td>
+      <td>MDE 123 [32-P]<img src="https://my.sdu.edu.kz/images/stud_icon.png"><br><img src="https://my.sdu.edu.kz/images/house.gif">: G303</td>
+      <td>INF 231  [09-P]<img src="https://my.sdu.edu.kz/images/stud_icon.png"><br><img src="https://my.sdu.edu.kz/images/house.gif">: F203</td>
+      <td></td>
+      <td>INF 202  [05-N]<img src="https://my.sdu.edu.kz/images/stud_icon.png"><br><img src="https://my.sdu.edu.kz/images/house.gif">: D218</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">10:00<br>10:50</th>
+      <td></td>
+      <td>MDE 123 [32-P]<img src="https://my.sdu.edu.kz/images/stud_icon.png"><br><img src="https://my.sdu.edu.kz/images/house.gif">: G303</td>
+      <td></td>
+      <td></td>
+      <td>INF 202  [05-N]<img src="https://my.sdu.edu.kz/images/stud_icon.png"><br><img src="https://my.sdu.edu.kz/images/house.gif">: D218</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">11:00<br>11:50</th>
+      <td></td>
+      <td>MDE 123 [32-P]<img src="https://my.sdu.edu.kz/images/stud_icon.png"><br><img src="https://my.sdu.edu.kz/images/house.gif">: G303</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">12:00<br>12:50</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">13:00<br>13:50</th>
+      <td>INF 202  [19-P]<img src="https://my.sdu.edu.kz/images/stud_icon.png"><br><img src="https://my.sdu.edu.kz/images/house.gif">: VR 19</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">14:00<br>14:50</th>
+      <td></td>
+      <td>INF 231  [02-N]<img src="https://my.sdu.edu.kz/images/stud_icon.png"><br><img src="https://my.sdu.edu.kz/images/house.gif">: D218</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>MDE 172  [26-N]<img src="https://my.sdu.edu.kz/images/stud_icon.png"><br><img src="https://my.sdu.edu.kz/images/house.gif">: VR 10</td>
+    </tr>
+    <tr>
+      <th scope="row">15:00<br>15:50</th>
+      <td>CSS 215  [06-L]<img src="https://my.sdu.edu.kz/images/stud_icon.png"><br><img src="https://my.sdu.edu.kz/images/house.gif">: F305</td>
+      <td>INF 231  [02-N]<img src="https://my.sdu.edu.kz/images/stud_icon.png"><br><img src="https://my.sdu.edu.kz/images/house.gif">: D218</td>
+      <td></td>
+      <td>MDE 143  [07-P]<img src="https://my.sdu.edu.kz/images/stud_icon.png"><br><img src="https://my.sdu.edu.kz/images/house.gif">: SH 1</td>
+      <td></td>
+      <td>MDE 172  [26-N]<img src="https://my.sdu.edu.kz/images/stud_icon.png"><br><img src="https://my.sdu.edu.kz/images/house.gif">: VR 10</td>
+    </tr>
+    <tr>
+      <th scope="row">16:00<br>16:50</th>
+      <td>CSS 215  [01-N]<img src="https://my.sdu.edu.kz/images/stud_icon.png"><br><img src="https://my.sdu.edu.kz/images/house.gif">: D117</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>MDE 133  [19-P]<img src="https://my.sdu.edu.kz/images/stud_icon.png"><br><img src="https://my.sdu.edu.kz/images/house.gif">: F301</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">17:00<br>17:50</th>
+      <td>CSS215   [01-N]<img src="https://my.sdu.edu.kz/images/stud_icon.png"><br><img src="https://my.sdu.edu.kz/images/house.gif">: D117</td>
+      <td></td>
+      <td></td>
+      <td>MDE 172  [32-P]<img src="https://my.sdu.edu.kz/images/stud_icon.png"><br><img src="https://my.sdu.edu.kz/images/house.gif">: VR 17</td>
+      <td>MDE 133  [19-P]<img src="https://my.sdu.edu.kz/images/stud_icon.png"><br><img src="https://my.sdu.edu.kz/images/house.gif">: F301</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">18:00<br>18:50</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<input type="checkbox" id = "details" name="details">
+<label for = "details">Details</label>
+<div class = "login">
+<div class = "login2">
+<p class = "sis"><i><a href="https://sdu.edu.kz/ru/suleyman-demirel-university-ru/">Suleyman Demirel University</a><br>Student Information System</i></p><br>
+<input id = "studnum" type="text" name="studnum" placeholder="Student number"><br>
+<input id = "pass" type="password" name="pass" placeholder="Password"><br>
+<button class = "btn btn-light" id = "in">Log In</button>
+<p id = "cant">Can't access my account</p>
+</div>
+</div>
+
+<div id="map">
+</div>
+<div class = "forgot">
+	<p>Write down your SDU e-mail address</p>
+	<input type="text" placeholder="E-mail"><br><br>
+	<button type="button" class="btn btn-outline-primary">Send</button>
+</div>
+
+</body>
+</html>

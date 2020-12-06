@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+* {
+	font-family: 'Oswald', sans-serif;
+}
+#map {	
+  width: 250px;
+  height: 245px;
+  margin-top: -245px;
+  margin-left: 30px;
+}
+body {
+	margin:0;
+	height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#hat {
+	background-color: white;
+	display: flex;
+	justify-content: space-around;
+    margin: 0 auto;
+
+    width: 100%;
+
+    font-size: 21px;
+
+}
+#ones {
+	margin-top: 38px;
+	margin-right: 90px;
+	cursor: pointer;
+}
+#sdulogo {
+	margin-left: 30px;
+	cursor: pointer;
+}
+#sdu {
+	width: 100%;
+}
+#stud_photo {
+	opacity: 0.1;
+	position: absolute;
+	margin-top: -770px;
+	margin-left: 200px;	
+	width: 14%;
+	border: 2px solid white;
+}
+#table1 {
+	text-align: center;
+	width: 600px;
+	position: absolute;
+	margin-top: -770px;
+	margin-left: 600px;
+	color: black;
+	background-color: white;
+	opacity: 0.1;
+}
+#table2 {
+	text-align: center;
+	width: 1100px;
+	position: absolute;
+	margin-top: -770px;
+	margin-left: 220px;
+	color: black;
+	background-color: white;
+	opacity: 0.8;
+
+}
+#years {
+	margin-top: -340px;
+	margin-left: 690px;
+	position: absolute;
+	opacity: 0.8;
+}
+#table3 {
+	text-align: center;
+	opacity: 0.8;
+	width: 1230px;
+	margin-left: 150px;
+	margin-top: -830px;
+	background-color: white;
+}
+#details {
+	position: absolute;
+	margin-top: -820px;
+	margin-left: 1346px;
+}
+label {
+	position: absolute;
+	color:white;
+	margin-top: -827px;
+	margin-left: 1412px;
+}
+.login {
+	opacity: 0.9;
+	position: absolute;
+	background-color: white;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	width: 500px;
+	height: 300px;
+	text-align: center;
+	align-items: center;
+	margin-top: 250px;
+	margin-left: 520px;
+	border-radius: 20px;
+}
+
+input {
+	width: 247px;
+	border: none;
+	border-bottom: 2px solid black;
+	outline: none;
+}
+.sis {
+	font-size: 20px;
+}
+#pass {
+	margin-top: 8px;
+}
+#in {
+	margin-top: 28px;
+}
+#cant { 
+	position: absolute;
+	margin-left: 195px;
+	margin-top: 6px;
+	cursor: pointer;
+}
+
+.forgot {
+	position: absolute;
+	margin-top: -450px;
+	margin-left: 570px;
+	width: 400px;
+	height: 200px;
+	background-color: white;
+	opacity: 0.9;
+	border-radius: 20px;
+	text-align: center;
+	justify-content: center;
+	display: inline-block;
+
+}
+.forgot input {
+	border: none;
+	border-bottom: 2px solid black;
+	outline: none;
+}
+.forgot p {
+	font-size: 25px;
+	margin-top: 45px;
+}
+.forgot button {
+	background-color: ;
+}
+
+@media (max-width: 500px) {
+	#sdu {
+		display: none;
+	}
+	body {
+	background-image: url("sdu.jpg");
+	background-size: 270%;
+	background-position: center bottom;
+	}
+	.login {
+		margin-left: 25px;
+		width: 450px;
+		height: 280px;
+	}
+	#cant {
+		margin-top: -27px;
+	}
+	#stud_photo {
+		margin: auto;
+		margin-top: 38px;
+		margin-left:150px;
+		width: 200px;
+	}
+	#table1 {
+		margin: auto;
+		margin-left: 75px;
+		margin-top: 350px;
+		width: 350px;
+		text-align: left;
+	}
+	#sdulogo {
+		width: 240px;
+		padding-left: -30px;
+	}
+	#hat {
+		display: block;
+		text-align: center;
+		position: relative;
+		padding-left: 110px;
+		font-size: 27px;
+		padding-bottom: 17px;
+	}
+	#hat div {
+		border-top: 1px solid grey;
+		padding: 5px 0;
+	}
+	#table2 {
+		margin-top: 150px;
+		margin-left: -107px;
+		width: 30px;
+		height: 100px;
+	}
+	#years {
+		margin-top: 880px;
+		margin-left: 240px;
+
+	}
+	#table3{
+		margin-top: 150px;
+		width: auto;
+		margin-left: -40px;
+	}
+}
