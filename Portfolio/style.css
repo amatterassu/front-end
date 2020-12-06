@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Rubik+Mono+One&display=swap');
+* {
+    margin: 0;
+}
+.about {
+    background: #172138;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+    padding-left: 220px;
+    padding-right: 220px;
+    padding-top: 30px;
+    padding-bottom: 3px;
+}
+.about span {
+    color: crimson;
+}
+/*.about2 .photo1{
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+    margin-left: 120px;
+    margin-top: 150px;
+    box-shadow: 0px 0px 60px 17px rgba(20, 20, 20, .17);
+}*/
+h2{
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 65px;
+    color: #172138;
+
+}
+.about2 .project1 {
+
+    margin-left: 70px;
+    margin-top: 170px;
+    width: 690px;
+    height: 640px;
+    box-shadow: 0px 0px 30px 10px rgba(20, 20, 20, .17);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+.about2 .project1:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.about2 h3 {
+    position: absolute;
+    font-size: 45px;
+    font-family: 'Kanit', sans-serif;
+    color: crimson;
+    margin-top: 55px;
+    margin-left: 70px;
+    cursor: pointer;
+    background-color: #172138;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.about2 .project2 {
+    position: absolute;
+    width: 460px;
+    margin-top:50px;
+    margin-left: 190px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    box-shadow: 0px 0px 30px 10px rgba(20, 20, 20, .17);
+}
+.about2 .project2:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.about2 h4 {
+    position: absolute;
+    font-size: 45px;
+    color: #172138;
+    background-color: crimson;
+    font-family: 'Kanit', sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 1070px;
+    margin-top: -382px;
+}
+.about2 .project3 {
+    margin-top: -280px;
+    margin-left: 840px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    box-shadow: 0px 0px 30px 10px rgba(20, 20, 20, .17);
+}
+.about2 .project3:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.about2 h5 {
+    position: absolute;
+    margin-left: 1250px;
+    font-size: 45px;
+    font-family: 'Kanit',sans-serif;
+    padding: 30px 30px 30px 30px;
+    background-color: #172138;
+    margin-top: -300px;
+    color:white;
+}
+.contact {
+    margin-top: 60px;
+    width: 100%;
+    height: 500px;
+    background-color: crimson;
+}
+.contact img {
+    width: 400;
+    height: 500px;
+    object-fit: cover;
+    margin-left: 110px;
+    margin-top: -70px;
+    box-shadow: 0px 0px 28px 12px rgba(20, 20, 20, .17);
+}
+.contact #icon1 {
+    color: #172138;
+    position: absolute;
+    margin-top: 268px;
+    margin-left: 6px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+.contact #icon2 {
+    color: #172138;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 6px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+.contact #icon3 {
+    color: #172138;
+    position: absolute;
+    margin-top: 86px;
+    margin-left: -8px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+.contact #icon4 {
+    color: #172138;
+    position: absolute;
+    margin-top: 186px;
+    margin-left: 6px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+.contact #icon1:hover {
+    color:white;
+}
+.contact #icon2:hover {
+    color:white;
+}
+.contact #icon3:hover {
+    color:white;
+}
+.contact #icon4:hover {
+    color:white;
+}
+.contact .contactme {
+    width: 40%;
+    padding: 40px;
+    background-color: #fff;
+    margin-top: -390px;
+    margin-left: 740px;
+}
+.contact .contactme #h2 {
+    color: #172138;
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+}
+.contact .contactme .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contact .contactme .inputBox input {
+    padding: 5px 0;
+    width: 100%;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+.contact .contactme .inputBox textarea {
+    padding: 5px 0;
+    width: 100%;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    resize: none;
+}
+.contact .contactme .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contact .contactme .inputBox input:focus ~ span,
+.contact .contactme .inputBox input:valid ~ span,
+.contact .contactme .inputBox textarea:focus ~ span,
+.contact .contactme .inputBox textarea:valid ~ span {
+    color:crimson;
+    font size: 12;
+    transform: translateY(-20px);
+}
+.contact .contactme .inputBox input[type = "submit"] {
+    width: 100px;
+    background: #172138;
+    color: crimson;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Kanit',sans-serif;
+}
+.contact .contactme form a {
+    position: absolute;
+    color: crimson;
+    margin-left: 480px;
+    margin-top: -65px;
+}
+.contact .contactme form #mailito{
+    margin-top: -35px;
+    margin-left: 425px;
+    position: absolute;
+}
+
+
+
+@media (max-width: 700px) {
+    .about {
+        font-size: 20px;
+        padding-left: 70px;
+        padding-right: 70px;
+        padding-top: 20px;
+        padding-bottom: 3px;
+    }
+    .about2 {
+        margin-bottom: 1200px;
+    }
+    .about2 .project1 {
+        margin-left: 16px;
+        margin-top: 140px;
+        width: 450px;
+        height: 400px;
+    }
+    .about2 h3 {
+        font-size: 45px;
+        font-family: 'Kanit', sans-serif;
+        color: crimson;
+        margin-top: 40px;
+        margin-left: 60px;
+        cursor: pointer;
+        background-color: #172138;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .about2 h4 {
+        position: absolute;
+        font-size: 45px;
+        margin-left: 70px;
+        margin-top: 35px;
+        text-align: center;
+    }
+    .about2 .project2 {
+        width: 460px;
+        margin-top:680px;
+        margin-left: -455px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        object-fit: cover;
+        box-shadow: 0px 0px 40px 10px rgba(20, 20, 20, .16);
+    }
+    .about2 .project3 {
+        position: absolute;
+        margin-top: 1358px;
+        margin-left: -414px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        object-fit: cover;
+        box-shadow: 0px 0px 40px 10px rgba(20, 20, 20, .16);   
+
+    }
+    .about2 h5 {
+        position: absolute;
+        margin-left: 118px;
+        font-size: 45px;
+        font-family: 'Kanit',sans-serif;
+        padding: 30px 30px 30px 30px;
+        background-color: #172138;
+        margin-top: 520px;
+        color:white;
+    }
+    .contact {
+        margin-top: 60px;
+        width: 100%;
+        height: 980px;
+        background-color: crimson;
+    }
+    .contact img {
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+        margin-left: 52px;
+        margin-top: 34px;
+        box-shadow: 0px 0px 28px 12px rgba(20, 20, 20, .17);
+    }
+    .contact #icon1 {
+        color: #172138;
+        position: absolute;
+        margin-top: 302px;
+        margin-left: 6px;
+        transition: color 0.3s ease;
+        cursor: pointer;
+    }
+    .contact #icon2 {
+        color: #172138;
+        position: absolute;
+        margin-top: 28px;
+        margin-left: 6px;
+        transition: color 0.3s ease;
+        cursor: pointer;
+    }
+    .contact #icon3 {
+        color: #172138;
+        position: absolute;
+        margin-top: 113px;
+        margin-left: -8px;
+        transition: color 0.3s ease;
+        cursor: pointer;
+    }
+    .contact #icon4 {
+        color: #172138;
+        position: absolute;
+        margin-top: 215px;
+        margin-left: 6px;
+        transition: color 0.3s ease;
+        cursor: pointer;
+    }
+    .contact .contactme {
+        width: 60%;
+        padding: 40px;
+        background-color: #fff;
+        margin-top: 60px;
+        margin-left: 53px;
+    }
+    .contact .contactme form a {
+        position: absolute;
+        color: crimson;
+        margin-left: 168px;
+        margin-top: -65px;
+    }
+    .contact .contactme form #mailito{
+        margin-top: -35px;
+        margin-left: 130px;
+}
