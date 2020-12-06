@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Rubik+Mono+One&display=swap');
 * {
     margin: 0;
+    font-family: 'Kanit',sans-serif;
 }
 .about {
     background: #172138;
