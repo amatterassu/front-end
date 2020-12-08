@@ -8,7 +8,7 @@
 	text-decoration: none;
 }
 body {
-    background-image: url('sduback.jpg');
+    background-image: url('sdufull.jpg');
     background-size: 100%;
 }
 html {
@@ -92,7 +92,7 @@ html {
 }
 #table3 {
 	text-align: center;
-	opacity: 0.8;
+	opacity: 0.9;
 	width: 1230px;
 	margin-left: 150px;
 	background-color: white;
@@ -103,6 +103,7 @@ html {
     color: white;
     padding-bottom: 27px;
     padding-top: 27px;
+    font-size: 45px;
 }
 @media (max-width: 947px) {
 	.max-width {
